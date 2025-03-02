@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Robo Soccer | Varnothsava</title>
+    <link rel="icon" href="../img/download.png" type="image/x-icon" />
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        /* Custom Styles */
+        .event-banner {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .section-title {
+            font-weight: 700;
+            font-size: 2rem;
+            color: #0056b3;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .content-box {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .coordinator-card {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            background: #f8f9fa;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .coordinator-card:hover {
+            transform: translateY(-5px);
+        }
+        .coordinator-card img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: 3px solid #007bff;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+<!-- Event Section -->
+<section class="container py-5">
+    
+    <!-- Event Banner -->
+    <div class="text-center">
+        <img src="../img/events/18.jpeg" alt="Event Banner" class="event-banner img-fluid">
+    </div>
+
+    <!-- Event Title -->
+    <div class="text-center mt-4">
+        <h1 class="fw-bold text-primary">🎭 Robo Soccer - Varnothsava 2K25</h1>
+        <p class="text-muted fs-5">Showcase your moves and battle for glory!</p>
+    </div>
+
+    <!-- Main Content (Two Columns) -->
+    <div class="row mt-5 g-4">
+        
+        <!-- Left Side: About + Rules + Rounds -->
+        <div class="col-lg-8">
+            <div class="content-box">
+                <h2 class="section-title">About the Event</h2>
+                <p class="text-secondary">
+                    Knockout tournament where teams control robots to score goals within a timed match.
+                </p>
+                
+                <h3 class="text-primary mt-4">Rules & Guidelines</h3>
+                <ul class="text-secondary">
+                    <li>Knockout format with teams advancing based on wins.</li>
+                    <li>Matches are divided into two 2-minute rounds, with a 1-minute technical timeout. </li>
+                    <li>Teams may request one additional 1-minute timeout without penalty; extended timeouts incur a 1-point deduction per extra minute (up to 3 minutes). </li>
+                    <li>A goal is worth 1 point, and the ball remains in play after scoring.</li>
+                    <li>Robots must be within 30cm x 30cm x 30cm dimensions and not exceed 5.5kg.</li>
+                    <li>Robots can push or hit the ball but cannot grab or trap it.</li>
+                    <li>No deliberate interference or damage to opponents’ bots; violations lead to disqualification.</li>
+                </ul>
+
+                <h3 class="text-primary mt-4">Rounds</h3>
+                <ul class="text-secondary">
+                    <li><strong>Round 1:</strong> Knockout match (5-minute duration, divided into two 2-minute rounds). </li>
+                    <li><strong>Round 2:</strong> Continued knockout rounds with similar match duration until the final. </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right Side: Event Details -->
+        <div class="col-lg-4">
+            <div class="content-box">
+                <h2 class="section-title">Event Details</h2>
+                <p><strong>📌 Type:</strong> Team (2-4 members)</p>
+                <p><strong>⏳ Date:</strong> 21/3/2025</p>
+                <p><strong>📍 Venue:</strong> ME & CVE LOBBY</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Coordinators -->
+    <div class="mt-5">
+        <h2 class="section-title">Event Coordinators</h2>
+        
+        <div class="row g-4 text-center">
+            <!-- Student Coordinator 1 -->
+            <div class="col-md-4">
+                <div class="coordinator-card">
+                    <h5 class="fw-bold">Pavan R Gond</h5>
+                    <p class="text-muted">Student Coordinator</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+919448827825" class="text-primary">+91 94488 27825</a></p>
+                </div>
+            </div>
+
+            <!-- Student Coordinator 2 -->
+            <div class="col-md-4">
+                <div class="coordinator-card">
+                    <h5 class="fw-bold">Vishwas Bhat</h5>
+                    <p class="text-muted">Student Coordinator</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+917795012652" class="text-primary">+91 77950 12652</a></p>
+                </div>
+            </div>
+
+            <!-- Teacher Coordinator -->
+            <div class="col-md-4">
+                <div class="coordinator-card">
+                    <h5 class="fw-bold">Ms. Usha Parvathi (Basic Sc)</h5>
+                    <p class="text-muted">Faculty Coordinator</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+919481916153" class="text-primary">+91 94819 16153</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
