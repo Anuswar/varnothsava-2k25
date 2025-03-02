@@ -265,7 +265,51 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-} 
+}
+
+/* =============== SPECIAL =============== */
+.special-card {
+  border: none;
+  border-radius: 20px;
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.special-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.special-card i {
+  font-size: 2.5rem;
+}
+
+/* Unique Backgrounds */
+.food-fest {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.gaming-zone {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.business-hunt {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .special-card {
+    padding: 30px;
+  }
+
+  .special-card i {
+    font-size: 2rem;
+  }
+}
 
 /* =============== EVENT =============== */
 .search-bar {
