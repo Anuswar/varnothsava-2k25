@@ -5,7 +5,7 @@
         "date": "March 20, 2025",
         "time": "10:00 AM",
         "location": "Workshop Lab (Computer Lab -07)",
-        "image": "img/events/1.jpeg",
+        "image": "img/events/1.jpg",
         "category": "Technical Event",
         "color": "primary",
         "page": "events/1.html"
@@ -16,7 +16,7 @@
         "date": "March 20, 2025",
         "time": "10:00 AM",
         "location": "Main Stage",
-        "image": "img/events/2.jpeg",
+        "image": "img/events/2.png",
         "category": "Cultural Event",
         "color": "danger",
         "page": "events/2.html"
@@ -27,7 +27,7 @@
         "date": "March 20, 2025",
         "time": "10:00 AM",
         "location": "MBA Block",
-        "image": "img/events/3.jpeg",
+        "image": "img/events/3.jpg",
         "category": "Business Carnival",
         "color": "success",
         "page": "events/3.html"
@@ -38,7 +38,7 @@
         "date": "March 20, 2025",
         "time": "10:00 AM",
         "location": "CAED lab",
-        "image": "img/events/4.jpeg",
+        "image": "img/events/4.png",
         "category": "Technical Event",
         "color": "primary",
         "page": "events/4.html"
@@ -49,7 +49,7 @@
         "date": "March 20, 2025",
         "time": "11:00 AM",
         "location": "Main Stage",
-        "image": "img/events/5.png",
+        "image": "img/events/5.jpg",
         "category": "Cultural Event",
         "color": "danger",
         "page": "events/5.html"
@@ -60,7 +60,7 @@
         "date": "March 20, 2025",
         "time": "10:00 AM",
         "location": "MBA Block",
-        "image": "img/events/6.jpeg",
+        "image": "img/events/6.jpg",
         "category": "Business Carnival",
         "color": "success",
         "page": "events/6.html"
@@ -71,7 +71,7 @@
         "date": "March 20, 2025",
         "time": "10:00 AM",
         "location": "Civil and Mechanical block -C-202",
-        "image": "img/events/7.jpeg",
+        "image": "img/events/7.jpg",
         "category": "Technical Event",
         "color": "primary",
         "page": "events/7.html"
@@ -82,7 +82,7 @@
         "date": "March 20, 2025",
         "time": "10:00 AM",
         "location": "Admin Block ,Seminar Hall",
-        "image": "img/events/8.jpeg",
+        "image": "img/events/8.jpg",
         "category": "Cultural Event",
         "color": "danger",
         "page": "events/8.html"
@@ -93,7 +93,7 @@
         "date": "March 20, 2025",
         "time": "10:00 AM",
         "location": "MBA Block",
-        "image": "img/events/9.jpeg",
+        "image": "img/events/9.jpg",
         "category": "Business Carnival",
         "color": "success",
         "page": "events/9.html"
@@ -104,7 +104,7 @@
         "date": "March 20, 2025",
         "time": "02:00 AM",
         "location": "Workshop Lab F-106",
-        "image": "img/events/10.jpeg",
+        "image": "img/events/10.jpg",
         "category": "Technical Event",
         "color": "primary",
         "page": "events/10.html"
@@ -115,7 +115,7 @@
         "date": "March 20, 2025",
         "time": "11:00 AM",
         "location": "Preliminary Round- admin block seminar hall Next Round main stage",
-        "image": "img/events/11.jpeg",
+        "image": "img/events/11.jpg",
         "category": "Cultural Event",
         "color": "danger",
         "page": "events/11.html"
@@ -126,7 +126,7 @@
         "date": "March 20, 2025",
         "time": "02:00 AM",
         "location": "B001 and A&D lab",
-        "image": "img/events/12.jpeg",
+        "image": "img/events/12.jpg",
         "category": "Technical Event",
         "color": "primary",
         "page": "events/12.html"
@@ -137,7 +137,7 @@
         "date": "March 20, 2025",
         "time": "9:00 AM",
         "location": "Admin Block ,1st floor",
-        "image": "img/events/13.jpeg",
+        "image": "img/events/13.png",
         "category": "Cultural Event",
         "color": "danger",
         "page": "events/13.html"
@@ -148,7 +148,7 @@
         "date": "March 21, 2025",
         "time": "9:30 AM",
         "location": "Admin block (seminar hall)",
-        "image": "img/events/14.jpeg",
+        "image": "img/events/14.png",
         "category": "Technical Event",
         "color": "primary",
         "page": "events/14.html"
@@ -159,7 +159,7 @@
         "date": "March 20, 2025",
         "time": "9:00 AM",
         "location": "Main Stage",
-        "image": "img/events/15.jpeg",
+        "image": "img/events/15.jpg",
         "category": "Cultural Event",
         "color": "danger",
         "page": "events/15.html"
@@ -170,7 +170,7 @@
         "date": "March 21, 2025",
         "time": "11:30 AM",
         "location": "Second Floor Admin Block (A201 & A202)",
-        "image": "img/events/16.jpeg",
+        "image": "img/events/16.png",
         "category": "Technical Event",
         "color": "primary",
         "page": "events/16.html"
@@ -181,7 +181,7 @@
         "date": "March 20, 2025",
         "time": "9:00 AM",
         "location": "Admin Block,1st floor",
-        "image": "img/events/17.jpeg",
+        "image": "img/events/17.jpg",
         "category": "Cultural Event",
         "color": "danger",
         "page": "events/17.html"
@@ -203,7 +203,7 @@
         "date": "March 21, 2025",
         "time": "09:00 AM",
         "location": "Near Mechanical Workshop",
-        "image": "img/events/20.jpeg",
+        "image": "img/events/20.jpg",
         "category": "Technical Event",
         "color": "primary",
         "page": "events/20.html"
@@ -214,7 +214,7 @@
         "date": "March 21, 2025",
         "time": "10:00 AM",
         "location": "Main Stage",
-        "image": "img/events/21.jpeg",
+        "image": "img/events/21.jpg",
         "category": "Cultural Event",
         "color": "danger",
         "page": "events/21.html"
@@ -225,7 +225,7 @@
         "date": "March 21, 2025",
         "time": "09:30 AM",
         "location": "ECE Lobby",
-        "image": "img/events/22.jpeg",
+        "image": "img/events/22.png",
         "category": "Technical Event",
         "color": "primary",
         "page": "events/22.html"
@@ -236,7 +236,7 @@
         "date": "March 21, 2025",
         "time": "12:00 PM",
         "location": "Main Stage",
-        "image": "img/events/23.jpeg",
+        "image": "img/events/23.jpg",
         "category": "Cultural Event",
         "color": "danger",
         "page": "events/23.html"
@@ -247,7 +247,7 @@
         "date": "March 21, 2025",
         "time": "10:00 AM",
         "location": "Admin Block ,First Floor",
-        "image": "img/events/24.jpeg",
+        "image": "img/events/24.jpg",
         "category": "Cultural Event",
         "color": "danger",
         "page": "events/24.html"
@@ -258,7 +258,7 @@
         "date": "March 21, 2025",
         "time": "11:00 AM",
         "location": "Library Block,First Floor",
-        "image": "img/events/25.jpeg",
+        "image": "img/events/25.jpg",
         "category": "Cultural Event",
         "color": "danger",
         "page": "events/25.html"
@@ -269,10 +269,10 @@
         "date": "March 21, 2025",
         "time": "9:00 AM",
         "location": "Admin Block",
-        "image": "img/events/26.jpeg",
+        "image": "img/events/26.png",
         "category": "Cultural Event",
         "color": "danger",
-        "page": "events/27.html"
+        "page": "events/26.html"
     },
     {
         "id": 27,
@@ -280,7 +280,7 @@
         "date": "March 21, 2025",
         "time": "1:00 PM",
         "location": "Admin Block",
-        "image": "img/events/27.jpeg",
+        "image": "img/events/27.jpg",
         "category": "Cultural Event",
         "color": "danger",
         "page": "events/27.html"
@@ -291,7 +291,7 @@
         "date": "March 21, 2025",
         "time": "1:15 PM",
         "location": "Main Stage",
-        "image": "img/events/28.jpeg",
+        "image": "img/events/28.jpg",
         "category": "Cultural Event",
         "color": "danger",
         "page": "events/28.html"
@@ -302,7 +302,7 @@
         "date": "March 21, 2025",
         "time": "12:00 PM",
         "location": "Admin Block",
-        "image": "img/events/29.jpeg",
+        "image": "img/events/29.jpg",
         "category": "Cultural Event",
         "color": "danger",
         "page": "events/29.html"
@@ -313,7 +313,7 @@
         "date": "March 21, 2025",
         "time": "11:00 AM",
         "location": "library Block Seminar Hall-3",
-        "image": "img/events/30.jpeg",
+        "image": "img/events/30.jpg",
         "category": "Cultural Event",
         "color": "danger",
         "page": "events/30.html"
