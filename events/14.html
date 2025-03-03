@@ -1,154 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Squid Hunt | Varnothsava</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Squid Hunt - Varnothsava 2K25</title>
     <link rel="icon" href="../img/download.png" type="image/x-icon" />
 
     <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
     <style>
-        /* Custom Styles */
-        .event-banner {
-            width: 100%;
-            height: auto;
-            max-height: 400px;
-            object-fit: cover;
-            border-radius: 12px;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-        }
-        .section-title {
-            font-weight: 700;
-            font-size: 2rem;
-            color: #0056b3;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .content-box {
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        .coordinator-card {
-            text-align: center;
-            padding: 20px;
-            border-radius: 10px;
-            border: 1px solid #ddd;
-            background: #f8f9fa;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .coordinator-card:hover {
-            transform: translateY(-5px);
-        }
-        .coordinator-card img {
-            width: 90px;
-            height: 90px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 10px;
-            border: 3px solid #007bff;
-        }
+      /* Custom Styles */
+      .event-banner {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+      }
+      .section-title {
+        font-weight: 700;
+        font-size: 2rem;
+        color: #0056b3;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .content-box {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .coordinator-card {
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        background: #f8f9fa;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+      .coordinator-card:hover {
+        transform: translateY(-5px);
+      }
+      .coordinator-card img {
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        border: 3px solid #007bff;
+      }
+      .card {
+        transition: transform 0.3s ease-in-out;
+      }
+      .card:hover {
+        transform: scale(1.05);
+      }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+      .card-body {
+        padding: 15px;
+      }
     </style>
-</head>
-<body class="bg-light">
+  </head>
+  <body class="bg-light">
+    <!-- Event Section -->
+    <section class="container py-5">
+      <!-- Event Banner -->
+      <div class="text-center">
+        <img src="../img/events/14.png" alt="Event Banner" class="event-banner img-fluid" />
+      </div>
 
-<!-- Event Section -->
-<section class="container py-5">
-    
-    <!-- Event Banner -->
-    <div class="text-center">
-        <img src="../img/Events/14.png" alt="Event Banner" class="event-banner img-fluid">
-    </div>
-
-    <!-- Event Title -->
-    <div class="text-center mt-4">
-        <h1 class="fw-bold text-primary">🎭 Squid Hunt - Varnothsava 2K25</h1>
+      <!-- Event Title -->
+      <div class="text-center mt-4">
+        <h1 class="fw-bold text-primary">
+          🎭 Squid Hunt - Varnothsava 2K25
+        </h1>
         <p class="text-muted fs-5">Showcase your moves and battle for glory!</p>
-    </div>
+      </div>
 
-    <!-- Main Content (Two Columns) -->
-    <div class="row mt-5 g-4">
-        
-        <!-- Left Side: About + Rules + Rounds -->
-        <div class="col-lg-8">
-            <div class="content-box">
-                <h2 class="section-title">About the Event</h2>
-                <p class="text-secondary">
-                    Thrilling team-based event where participants solve proverbs to locate checkpoints, complete physical games, and tackle programming challenges.
-                </p>
-                
-                <h3 class="text-primary mt-4">Rules & Guidelines</h3>
-                <ul class="text-secondary">
-                    <li>Solve a proverb to identify the location of the first checkpoint.</li>
-                    <li>Complete a physical game at the checkpoint within 5 minutes.</li>
-                    <li>If successful, solve a surprise engineering-related problem within the remaining time of the 5 minutes.</li>
-                    <li>Repeat this process for multiple checkpoints.</li>
-                    <li>Teams failing the physical game proceed without earning bonus points. </li>
+      <!--==================== MAIN ====================-->
+      <div class="row mt-5 g-4">
+        <!-- Right Side -->
+        <div class="col-lg-4 order-0 order-md-1">
+          <div class="content-box">
+            <h2 class="section-title">Event Details</h2>
+            <p><strong>📌 Type:</strong> Team (4 members)</p>
+            <p><strong>⏳ Date:</strong> 21/3/2025</p>
+            <p><strong>📍 Venue:</strong> Admin block (seminar hall)</p>
+          </div>
+        </div>
+
+        <!-- Left Side -->
+        <div class="col-lg-8 order-1 order-md-0">
+          <div class="content-box">
+            <h2 class="section-title">About the Event</h2>
+            <p class="text-secondary">
+              A team-based machine learning challenge where participants spin a
+              wheel to receive a random algorithm, preprocess datasets, and
+              build models within a time limit.
+            </p>
+
+            <h3 class="text-primary mt-4">Rules & Guidelines</h3>
+            <ul class="text-secondary">
+                <li>Solve a proverb to identify the location of the first checkpoint.</li>
+                <li>Complete a physical game at the checkpoint within 5 minutes.</li>
+                <li>If successful, solve a surprise engineering-related problem within the remaining time of the 5 minutes.</li>
+                <li>Repeat this process for multiple checkpoints.</li>
+                <li>Teams failing the physical game proceed without earning bonus points. </li>
+            </ul>
+
+            <h3 class="text-primary mt-4">Rounds</h3>
+            <ul class="text-secondary">
+                <li><strong>Round 1:</strong> Checkpoint challenges with basic tasks. Teams that successfully complete all tasks in this round will qualify for Round 2.</li>
+                <li><strong>Final Round:</strong> A Roadies-style event to determine the ultimate winner.</li>
+            </ul>
+
+            <h3 class="text-primary mt-4">Event Coordinators</h3>
+            <div class="row">
+              <!-- Student Coordinators -->
+              <div class="col-md-6 col-12">
+                <ul class="text-secondary list-unstyled">
+                  <li class="mb-3"><strong>Bhushan Poojary</strong> – Student Coordinator <br />📞 +91 73817 09385</li>
+                  <li><strong>Tejas Nayak</strong> – Student Coordinator <br />📞 +91 82961 51023</li>
                 </ul>
+              </div>
 
-                <h3 class="text-primary mt-4">Rounds</h3>
-                <ul class="text-secondary">
-                    <li><strong>Round 1:</strong> Checkpoint challenges with basic tasks. Teams that successfully complete all tasks in this round will qualify for Round 2.</li>
-                    <li><strong>Round 2:</strong> A Roadies-style event to determine the ultimate winner.</li>
+              <!-- Faculty Coordinator -->
+              <div class="col-md-6 col-12">
+                <ul class="text-secondary list-unstyled">
+                  <li><strong>Mr. Rajesh Nayak</strong> – Faculty Coordinator<br />📞 +91 91645 10062</li>
                 </ul>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Right Side: Event Details -->
-        <div class="col-lg-4">
-            <div class="content-box">
-                <h2 class="section-title">Event Details</h2>
-                <p><strong>📌 Type:</strong> Team (4 members)</p>
-                <p><strong>⏳ Date:</strong> 21/3/2025</p>
-                <p><strong>📍 Venue:</strong> Admin block (seminar hall)</p>
-            </div>
+      <!--==================== SIMILAR ====================-->
+      <div class="mt-5">
+        <h2 class="section-title">Similar Events</h2>
+        <div class="row g-4 text-center" id="technical-events">
+          <!-- Event cards will be appended here -->
         </div>
-    </div>
+      </div>
+    </section>
 
-    <!-- Coordinators -->
-    <div class="mt-5">
-        <h2 class="section-title">Event Coordinators</h2>
-        
-        <div class="row g-4 text-center">
-            <!-- Student Coordinator 1 -->
-            <div class="col-md-4">
-                <div class="coordinator-card">
-                    <h5 class="fw-bold">Bhushan Poojary</h5>
-                    <p class="text-muted">Student Coordinator</p>
-                    <p><i class="fas fa-phone"></i> <a href="tel:+917381709385" class="text-primary">+91 73817 09385</a></p>
-                </div>
-            </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          $.getJSON("../data/event.json", function (events) {
+            var container = $("#technical-events");
 
-            <!-- Student Coordinator 2 -->
-            <div class="col-md-4">
-                <div class="coordinator-card">
-                    <h5 class="fw-bold">Tejas Nayak</h5>
-                    <p class="text-muted">Student Coordinator</p>
-                    <p><i class="fas fa-phone"></i> <a href="tel:+918296151023" class="text-primary">+91 82961 51023</a></p>
-                </div>
-            </div>
-
-            <!-- Teacher Coordinator -->
-            <div class="col-md-4">
-                <div class="coordinator-card">
-                    <h5 class="fw-bold">Mr. Rajesh Nayak</h5>
-                    <p class="text-muted">Faculty Coordinator</p>
-                    <p><i class="fas fa-phone"></i> <a href="tel:+919164510062" class="text-primary">+91 91645 10062</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+            events.forEach(function (event) {
+              if (
+                event.category === "Technical Event" &&
+                event.title !== "Squid Hunt"
+              ) {
+                var card = `
+                            <div class="col-md-4">
+                                <a href="../${event.page}" class="card-link text-decoration-none">
+                                    <div class="card shadow-lg border-0 rounded-3 overflow-hidden">
+                                        <img src="../${event.image}" class="card-img-top" alt="${event.title}">
+                                        <div class="card-body bg-light">
+                                            <h5 class="card-title text-dark fw-bold">${event.title}</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        `;
+                container.append(card);
+              }
+            });
+          });
+        });
+    </script>
+  </body>
 </html>

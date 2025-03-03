@@ -1,152 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Electro Detectives | Varnothsava</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Electro Detectives (Circuit Debugging) - Varnothsava 2K25</title>
     <link rel="icon" href="../img/download.png" type="image/x-icon" />
 
     <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
     <style>
-        /* Custom Styles */
-        .event-banner {
-            width: 100%;
-            height: auto;
-            max-height: 400px;
-            object-fit: cover;
-            border-radius: 12px;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-        }
-        .section-title {
-            font-weight: 700;
-            font-size: 2rem;
-            color: #0056b3;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .content-box {
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        .coordinator-card {
-            text-align: center;
-            padding: 20px;
-            border-radius: 10px;
-            border: 1px solid #ddd;
-            background: #f8f9fa;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .coordinator-card:hover {
-            transform: translateY(-5px);
-        }
-        .coordinator-card img {
-            width: 90px;
-            height: 90px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 10px;
-            border: 3px solid #007bff;
-        }
+      .event-banner {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+      }
+      .section-title {
+        font-weight: 700;
+        font-size: 2rem;
+        color: #0056b3;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .content-box {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .coordinator-card {
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        background: #f8f9fa;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+      .coordinator-card:hover {
+        transform: translateY(-5px);
+      }
+      .coordinator-card img {
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        border: 3px solid #007bff;
+      }
+      .card {
+        transition: transform 0.3s ease-in-out;
+      }
+      .card:hover {
+        transform: scale(1.05);
+      }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+      .card-body {
+        padding: 15px;
+      }
     </style>
-</head>
-<body class="bg-light">
+  </head>
+  <body class="bg-light">
+    <!-- Event Section -->
+    <section class="container py-5">
+      <!-- Event Banner -->
+      <div class="text-center">
+        <img src="../img/events/12.jpg" alt="Event Banner" class="event-banner img-fluid" />
+      </div>
 
-<!-- Event Section -->
-<section class="container py-5">
-    
-    <!-- Event Banner -->
-    <div class="text-center">
-        <img src="../img/events/12.jpg" alt="Event Banner" class="event-banner img-fluid">
-    </div>
+      <!--==================== TITLE ====================-->
+      <div class="text-center mt-4">
+        <h1 class="fw-bold text-primary">
+          🎭 Electro Detectives (Circuit Debugging) - Varnothsava 2K25
+        </h1>
+        <p class="text-muted fs-5">Where Minds Break Codes, and Legends Rise! 🔥</p>
+      </div>
 
-    <!-- Event Title -->
-    <div class="text-center mt-4">
-        <h1 class="fw-bold text-primary">🎭 Electro Detectives - Varnothsava 2K25</h1>
-        <p class="text-muted fs-5">Showcase your moves and battle for glory!</p>
-    </div>
+      <!--==================== MAIN ====================-->
+      <div class="row mt-5 g-4">
+        <!-- Right Side -->
+        <div class="col-lg-4 order-0 order-md-1">
+          <div class="content-box">
+            <h2 class="section-title">Event Details</h2>
+            <p><strong>📌 Type:</strong> Team (2 members)</p>
+            <p><strong>⏳ Date:</strong> 20/3/2025</p>
+            <p><strong>📍 Venue:</strong> B001 and A&D lab</p>
+          </div>
+        </div>
 
-    <!-- Main Content (Two Columns) -->
-    <div class="row mt-5 g-4">
-        
-        <!-- Left Side: About + Rules + Rounds -->
-        <div class="col-lg-8">
-            <div class="content-box">
-                <h2 class="section-title">About the Event</h2>
-                <p class="text-secondary">
-                    Electronics circuit-based hands-on event where teams answer the given questions and prepare the circuit by solving the errors in the existing circuit diagram.
-                </p>
-                
-                <h3 class="text-primary mt-4">Rules & Guidelines</h3>
-                <ul class="text-secondary">
-                    <li>No usage of mobiles, laptops, or any textbooks while the event is going on.</li>
-                    <li>Asking for any type of help from another is prohibited.</li>
+        <!-- Left Side -->
+        <div class="col-lg-8 order-1 order-md-0">
+          <div class="content-box">
+            <h2 class="section-title">About the Event</h2>
+            <p class="text-secondary">
+                Electronics circuit-based hands-on event where teams answer the given questions and prepare the circuit by solving the errors in the existing circuit diagram.
+            </p>
+
+            <h3 class="text-primary mt-4">Rules & Guidelines</h3>
+            <ul class="text-secondary">
+                <li>No usage of mobiles, laptops, or any textbooks while the event is going on.</li>
+                <li>Asking for any type of help from another is prohibited.</li>
+            </ul>
+
+            <h3 class="text-primary mt-4">Rounds</h3>
+            <ul class="text-secondary">
+                <li><strong>Round 1:</strong> A simple pen-and-paper test with 25 questions on electronics that must be answered in 30 minutes.</li>
+                <li><strong>Round 2:</strong> Drawings of circuits with faults will be sent to the teams that advanced from Round 1. Their job is to find the errors and then precisely redo the circuit.</li>
+                <li><strong>Final Round:</strong> Participants in this round must design and construct a circuit hands-on and demonstrate the intended output. The top qualifiers from Round 2 will be permitted to compete.</li>
+            </ul>
+
+            <h3 class="text-primary mt-4">Event Coordinators</h3>
+            <div class="row">
+              <!-- Student Coordinators -->
+              <div class="col-md-6 col-12">
+                <ul class="text-secondary list-unstyled">
+                  <li class="mb-3"><strong>Chethan V Kotian</strong> – Student Coordinator <br />📞 +91 81239 36830</li>
+                  <li><strong>Ananya Bhat</strong> – Student Coordinator <br />📞 +91 94831 46270</li>
                 </ul>
+              </div>
 
-                <h3 class="text-primary mt-4">Rounds</h3>
-                <ul class="text-secondary">
-                    <li><strong>Round 1:</strong> A simple pen-and-paper test with 25 questions on electronics that must be answered in 30 minutes.</li>
-                    <li><strong>Round 2:</strong> Drawings of circuits with faults will be sent to the teams that advanced from Round 1. Their job is to find the errors and then precisely redo the circuit.</li>
-                    <li><strong>Final Round:</strong> Participants in this round must design and construct a circuit hands-on and demonstrate the intended output. The top qualifiers from Round 2 will be permitted to compete.</li>
+              <!-- Faculty Coordinator -->
+              <div class="col-md-6 col-12">
+                <ul class="text-secondary list-unstyled">
+                  <li><strong>Ms. Preethi</strong> – Faculty Coordinator <br />📧 preethi.cs@sode-edu.in</li>
                 </ul>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Right Side: Event Details -->
-        <div class="col-lg-4">
-            <div class="content-box">
-                <h2 class="section-title">Event Details</h2>
-                <p><strong>📌 Type:</strong> Team (2 members)</p>
-                <p><strong>⏳ Date:</strong> 20/3/2025</p>
-                <p><strong>📍 Venue:</strong> B001and A&D lab</p>
-            </div>
+      <!--==================== SIMILAR ====================-->
+      <div class="mt-5">
+        <h2 class="section-title">Similar Events</h2>
+        <div class="row g-4 text-center" id="technical-events">
+          <!-- Event cards will be appended here -->
         </div>
-    </div>
+      </div>
+    </section>
 
-    <!-- Coordinators -->
-    <div class="mt-5">
-        <h2 class="section-title">Event Coordinators</h2>
-        
-        <div class="row g-4 text-center">
-            <!-- Student Coordinator 1 -->
-            <div class="col-md-4">
-                <div class="coordinator-card">
-                    <h5 class="fw-bold">Athula A Bhat</h5>
-                    <p class="text-muted">Student Coordinator</p>
-                    <p><i class="fas fa-phone"></i> <a href="tel:+919113949231" class="text-primary">+91 91139 49231</a></p>
-                </div>
-            </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          $.getJSON("../data/event.json", function (events) {
+            var container = $("#technical-events");
 
-            <!-- Student Coordinator 2 -->
-            <div class="col-md-4">
-                <div class="coordinator-card">
-                    <h5 class="fw-bold">Adithya R Das</h5>
-                    <p class="text-muted">Student Coordinator</p>
-                    <p><i class="fas fa-phone"></i> <a href="tel:+918073487458" class="text-primary">+91 80734 87458</a></p>
-                </div>
-            </div>
-
-            <!-- Teacher Coordinator -->
-            <div class="col-md-4">
-                <div class="coordinator-card">
-                    <h5 class="fw-bold">Mr. Sandeep Prabhu (ECE)</h5>
-                    <p class="text-muted">Faculty Coordinator</p>
-                    <p><i class="fas fa-phone"></i> <a href="tel:+919964027565" class="text-primary">+91 99640 27565</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+            events.forEach(function (event) {
+              if (
+                event.category === "Technical Event" &&
+                event.title !== "Electro Detectives (Circuit Debugging)"
+              ) {
+                var card = `
+                            <div class="col-md-4">
+                                <a href="../${event.page}" class="card-link text-decoration-none">
+                                    <div class="card shadow-lg border-0 rounded-3 overflow-hidden">
+                                        <img src="../${event.image}" class="card-img-top" alt="${event.title}">
+                                        <div class="card-body bg-light">
+                                            <h5 class="card-title text-dark fw-bold">${event.title}</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        `;
+                container.append(card);
+              }
+            });
+          });
+        });
+    </script>
+  </body>
 </html>
+
