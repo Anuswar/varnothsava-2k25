@@ -24,6 +24,74 @@ $(window).on("load", function () {
   highlightActiveSection();
 });
 
+/*=============== ANIMATION ===============*/
+window.onload = function () {
+  // Animate navbar on load
+  setTimeout(() => {
+    document.querySelector(".navbar").classList.add("show");
+  }, 300);
+
+  const revealOptions = {
+    origin: "bottom",
+    distance: "50px",
+    duration: 1000,
+    delay: 200,
+    easing: "ease-in-out",
+  };
+
+  ScrollReveal().reveal("#home .display-3", { ...revealOptions, origin: "top", delay: 300 });
+  ScrollReveal().reveal("#home .fw-light", { ...revealOptions, origin: "bottom", delay: 500 });
+  ScrollReveal().reveal("#home .lead", { ...revealOptions, origin: "left", delay: 700 });
+  ScrollReveal().reveal("#home .btn", { ...revealOptions, origin: "right", delay: 900 });
+
+  // Animate About Section
+  ScrollReveal().reveal("#about h1", { ...revealOptions, origin: "top", delay: 300 });
+  ScrollReveal().reveal("#about p", { ...revealOptions, origin: "bottom", delay: 500, interval: 200 });
+  ScrollReveal().reveal("#about h2", { ...revealOptions, origin: "left", delay: 700 });
+  ScrollReveal().reveal("#about .video-container", { ...revealOptions, origin: "right", delay: 900 });
+
+  // Animate navigation links one by one
+  document.querySelectorAll(".navbar-nav .nav-link").forEach((item, index) => {
+    ScrollReveal().reveal(item, { ...revealOptions, origin: "top", delay: 400 + index * 100 });
+  });
+
+  // Animate Register button
+  ScrollReveal().reveal(".btn-primary", { ...revealOptions, origin: "bottom", delay: 1200 });
+
+  // Animate Special Attractions Section
+  ScrollReveal().reveal("#special h1", { ...revealOptions, origin: "top", delay: 300 });
+
+  document.querySelectorAll(".special-card").forEach((card, index) => {
+    ScrollReveal().reveal(card, { ...revealOptions, origin: "bottom", delay: 400 + index * 200 });
+  });
+
+  // Animate Event Timeline Section
+  ScrollReveal().reveal(".event-card", { ...revealOptions, origin: "top", delay: 300 });
+  ScrollReveal().reveal("#event h1", { ...revealOptions, origin: "top", delay: 300 });
+  ScrollReveal().reveal("#event p", { ...revealOptions, origin: "bottom", delay: 500 });
+  ScrollReveal().reveal(".filter-btn, .search-toggle", { ...revealOptions, origin: "left", delay: 700, interval: 100 });
+  ScrollReveal().reveal("#eventSearch", { ...revealOptions, origin: "right", delay: 800 });
+
+  // Animate Gallery Section
+  ScrollReveal().reveal("#gallery h2", { ...revealOptions, origin: "top", delay: 300 });
+  ScrollReveal().reveal(".swiper", { ...revealOptions, origin: "bottom", delay: 500 });
+  
+    // Animate Contact Section
+    ScrollReveal().reveal("#contact h1", { ...revealOptions, origin: "top", delay: 300 });
+    ScrollReveal().reveal("#contact p", { ...revealOptions, origin: "bottom", delay: 500 });
+  
+    // Animate FAQ Accordion
+    document.querySelectorAll(".accordion-item").forEach((item, index) => {
+      ScrollReveal().reveal(item, { ...revealOptions, origin: "left", delay: 400 + index * 100 });
+    });
+  
+    // Animate Contact Details (Address, Phone, Email)
+    document.querySelectorAll(".contact-card").forEach((card, index) => {
+      ScrollReveal().reveal(card, { ...revealOptions, origin: "bottom", delay: 600 + index * 200 });
+    });
+  
+};
+
 /*=============== HEADER ===============*/
 $(document).ready(function () {
   $(window).on("scroll resize", function () {
@@ -115,44 +183,49 @@ $(document).ready(function () {
   // Load events in chunks
   function loadMoreEvents() {
     let loadMoreBtn = $("#loadMoreBtn");
-
-    // If there are no more events to load, update button text and disable it
+  
     if (currentIndex >= filteredData.length) {
       loadMoreBtn.text("Event End").prop("disabled", true);
       return;
     }
-
-    let itemsToLoad = filteredData.slice(
-      currentIndex,
-      currentIndex + itemsPerPage
-    );
+  
+    let itemsToLoad = filteredData.slice(currentIndex, currentIndex + itemsPerPage);
     itemsToLoad.forEach((event) => {
       let eventCard = `
-            <div class="col-lg-4 col-md-6 col-12 event-card">
-                <div class="timeline-item">
-                    <div class="timeline-date">${event.date}</div>
-                    <div class="timeline-content">
-                        <img src="${event.image}" class="img-fluid rounded mb-2" alt="${event.title}">
-                        <h4 class="fw-bold text-${event.color}">${event.title}</h4>
-                        <p class="text-muted mb-1"><i class="fas fa-clock"></i> ${event.time}</p>
-                        <p class="text-muted mb-1"><i class="fas fa-map-marker-alt"></i> ${event.location}</p>
-                        <span class="badge bg-${event.color}">${event.category}</span>
-                        <button class="btn btn-outline-${event.color} read-more-btn" data-url="${event.page}">Read More</button>
-                    </div>
+        <div class="col-lg-4 col-md-6 col-12 event-card">
+            <div class="timeline-item">
+                <div class="timeline-date">${event.date}</div>
+                <div class="timeline-content">
+                    <img src="${event.image}" class="img-fluid rounded mb-2" alt="${event.title}">
+                    <h4 class="fw-bold text-${event.color}">${event.title}</h4>
+                    <p class="text-muted mb-1"><i class="fas fa-clock"></i> ${event.time}</p>
+                    <p class="text-muted mb-1"><i class="fas fa-map-marker-alt"></i> ${event.location}</p>
+                    <span class="badge bg-${event.color}">${event.category}</span>
+                    <button class="btn btn-outline-${event.color} read-more-btn" data-url="${event.page}">Read More</button>
                 </div>
-            </div>`;
+            </div>
+        </div>`;
       eventList.append(eventCard);
     });
-
+  
     currentIndex += itemsPerPage;
-
-    // If no more events, update button text and disable it
+  
+    // Reinitialize ScrollReveal for new event cards
+    ScrollReveal().reveal(".event-card", { 
+        ...revealOptions, 
+        origin: "bottom", 
+        delay: 400, 
+        interval: 200, 
+        reset: true 
+    });
+  
     if (currentIndex >= filteredData.length) {
       loadMoreBtn.text("Event End").prop("disabled", true);
     } else {
       loadMoreBtn.text("Load More").prop("disabled", false);
     }
   }
+  
 
   // Load more on button click
   $("#loadMoreBtn").on("click", function () {
