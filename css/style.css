@@ -726,25 +726,3 @@ h3 {
 
 
 
-.navbar {
-  transform: translateY(-100%);
-  opacity: 0;
-  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
-}
-
-.navbar.show {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
