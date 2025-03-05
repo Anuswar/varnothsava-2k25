@@ -1,9 +1,17 @@
 /* =============== BASE =============== */
 body {
   font-family: "Poppins", sans-serif;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
+
+/* Example media query for smaller screens */
+@media screen and (max-width: 768px) {
+  body {
+    overflow-y: auto; 
+  }
+}
+
 
 /* =============== SCROLL BAR =============== */
 /* For WebKit Browsers */
