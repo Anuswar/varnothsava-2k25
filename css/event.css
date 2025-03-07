@@ -1,0 +1,172 @@
+html{overflow-x:hidden}
+body{font-family:"Poppins",sans-serif;}
+/* =============== SCROLL BAR =============== */
+/* For WebKit Browsers */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 3px solid #ddd;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  /* For Firefox */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #ddd;
+  }
+  
+  /* General Styles (applied to all browsers) */
+  body {
+    scrollbar-color: #888 #ddd;
+    scrollbar-width: thin;
+  }
+.eventbg {
+    background: linear-gradient(
+        115deg,
+        rgba(0, 255, 255, 0.08),
+        rgba(255, 0, 150, 0.08),
+        rgba(0, 255, 0, 0.08)
+      ),
+      url("../img/website_background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .event-banner {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  .section-title {
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .content-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .card {
+    transition: transform 0.3s ease-in-out;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  .card-body {
+    padding: 15px;
+  }
+  
+  .eventbg {
+    background: linear-gradient(
+        115deg,
+        rgba(0, 255, 255, 0.1),
+        rgba(255, 0, 150, 0.1),
+        rgba(0, 255, 0, 0.1)
+      ),
+      url("../img/website_background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .event-banner {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 255, 255, 0.5);
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #00ffff;
+    text-shadow: 0px 0px 10px #00ffff;
+  }
+  
+  .content-box {
+    background: rgba(20, 20, 20, 0.85);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 255, 255, 0.3);
+    border: 2px solid rgba(0, 255, 255, 0.5);
+  }
+  
+  p,
+  li {
+    font-size: 1.1rem;
+    color: #ddd;
+  }
+  
+  h3 {
+    color: #ff00ff;
+    text-shadow: 0px 0px 10px #ff00ff;
+  }
+  
+  .card {
+    background: #111;
+    border: 2px solid rgba(255, 0, 150, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 0, 150, 0.7);
+  }
+  
+  .card-body {
+    padding: 20px;
+    background: rgba(30, 30, 30, 0.85);
+  }
+  
+  .card-title {
+    color: #00ff00;
+    text-shadow: 0px 0px 10px #00ff00;
+  }
+  
+  .register-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.7);
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .register-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.9);
+  }
+  
