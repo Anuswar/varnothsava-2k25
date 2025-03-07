@@ -1,0 +1,22 @@
+{
+    "name": "Varnothsava 2K25 - The Ultimate Cultural & Entertainment Fest",
+    "short_name": "Varnothsava 2K25",
+    "description": "Join us at Varnothsava 2K25, the ultimate cultural and entertainment fest at Shri Madhwa Vadiraja Institute, Karnataka, from March 20-21, 2025. Experience thrilling competitions, live music, dance, workshops, and more!",
+    "theme_color": "#2196f3",
+    "background_color": "#2196f3",
+    "display": "standalone",
+    "scope": "https://sode-edu.in/varnothsava/",
+    "start_url": "https://sode-edu.in/varnothsava/",
+    "icons": [
+      {
+        "src": "img/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "img/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+}
