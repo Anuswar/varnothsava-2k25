@@ -51,9 +51,11 @@ window.onload = function () {
   ScrollReveal().reveal("#about .video-container", { ...revealOptions, origin: "right", delay: 900 });
 
   // Animate navigation links one by one
-  document.querySelectorAll(".navbar-nav .nav-link").forEach((item, index) => {
-    ScrollReveal().reveal(item, { ...revealOptions, origin: "top", delay: 400 + index * 100 });
-  });
+  if (window.innerWidth >= 1009) { 
+    document.querySelectorAll(".navbar-nav .nav-link").forEach((item, index) => {
+      ScrollReveal().reveal(item, { ...revealOptions, origin: "top", delay: 400 + index * 100 });
+    });
+  }  
 
   // Animate Register button
   ScrollReveal().reveal(".btn-primary", { ...revealOptions, origin: "bottom", delay: 1200 });
@@ -70,7 +72,6 @@ window.onload = function () {
   ScrollReveal().reveal("#event h1", { ...revealOptions, origin: "top", delay: 300 });
   ScrollReveal().reveal("#event p", { ...revealOptions, origin: "bottom", delay: 500 });
   ScrollReveal().reveal(".filter-btn, .search-toggle", { ...revealOptions, origin: "left", delay: 700, interval: 100 });
-  ScrollReveal().reveal("#eventSearch", { ...revealOptions, origin: "right", delay: 800 });
 
   // Animate Gallery Section
   ScrollReveal().reveal("#gallery h2", { ...revealOptions, origin: "top", delay: 300 });
@@ -164,7 +165,7 @@ $(document).ready(function () {
   let currentIndex = 0;
   let fuse;
 
-  // Toggle Search Bar Visibility using Bootstrap's d-none class
+  // Toggle Search Bar Visibility
   $(".search-toggle").on("click", function () {
     $("#searchContainer").toggleClass("d-none");
     if (!$("#searchContainer").hasClass("d-none")) {
@@ -210,36 +211,16 @@ $(document).ready(function () {
   
     currentIndex += itemsPerPage;
   
-    // Reinitialize ScrollReveal for new event cards
-    ScrollReveal().reveal(".event-card", { 
-        ...revealOptions, 
-        origin: "bottom", 
-        delay: 400, 
-        interval: 200, 
-        reset: true 
-    });
-  
     if (currentIndex >= filteredData.length) {
       loadMoreBtn.text("Event End").prop("disabled", true);
     } else {
       loadMoreBtn.text("Load More").prop("disabled", false);
     }
   }
-  
 
   // Load more on button click
   $("#loadMoreBtn").on("click", function () {
     loadMoreEvents();
-  });
-
-  // Infinite Scroll: load more when nearing page bottom.
-  $(window).on("scroll", function () {
-    if (
-      $(window).scrollTop() + $(window).height() >=
-      $(document).height() - 100
-    ) {
-      loadMoreEvents();
-    }
   });
 
   // Redirect on "Read More" button click
@@ -292,7 +273,7 @@ $(document).ready(function () {
     applyFilters();
   });
 
-  // Example for clearing filters (ensure an element with id "clearFilters" exists)
+  // Clear filters
   $("#clearFilters").on("click", function () {
     selectedCategory = null;
     $("#eventSearch").val("");
