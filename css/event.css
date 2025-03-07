@@ -1,5 +1,27 @@
-html{overflow-x:hidden}
-body{font-family:"Poppins",sans-serif;}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* Example media query for smaller screens */
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
 /* =============== SCROLL BAR =============== */
 /* For WebKit Browsers */
 ::-webkit-scrollbar {
