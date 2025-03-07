@@ -39,5 +39,18 @@ window.onload = function () {
     document.querySelectorAll("#Cultural-Event .event-card").forEach((card, index) => {
         sr.reveal(card, { origin: "bottom", delay: 1400 + index * 200 });
       });
+
+      // Header animations
+    sr.reveal(".header h1", { origin: "top", delay: 300 });
+    sr.reveal(".header p", { origin: "bottom", delay: 400 });
+    sr.reveal(".register-btn", { origin: "bottom", delay: 500 });
+
+    // Section animations
+    sr.reveal(".section h2", { origin: "left", delay: 300 });
+    sr.reveal(".list-group-item", { origin: "right", delay: 400, interval: 100 });
+    sr.reveal(".section p", { origin: "bottom", delay: 500 });
+
+    // Contact information
+    sr.reveal(".contact-info", { origin: "bottom", delay: 600, interval: 200 });
   };
   

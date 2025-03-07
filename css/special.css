@@ -1,0 +1,129 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: -o-linear-gradient(315deg, #43cea2, #185a9d);
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: white;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #ddd;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #ddd;
+}
+
+/* General Styles (applied to all browsers) */
+body {
+  scrollbar-color: #888 #ddd;
+  scrollbar-width: thin;
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+.section {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  margin: 20px 0;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+.section h2 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+.list-group-item {
+  border: none;
+  background: rgba(240, 240, 240, 0.8);
+  padding: 10px;
+  font-size: 1rem;
+}
+.contact-info {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
+.contact-info a {
+  color: #ffdd57;
+  text-decoration: none;
+  font-weight: bold;
+}
+.register-btn {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 15px auto;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.register-btn:hover {
+  background: #0056b3;
+}
+.example {
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(white),
+    to(black)
+  );
+  background: -o-linear-gradient(top, white, black);
+  background: linear-gradient(to bottom, white, black);
+}
