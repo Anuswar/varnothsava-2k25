@@ -39,58 +39,149 @@ window.onload = function () {
     easing: "ease-in-out",
   };
 
-  ScrollReveal().reveal("#home .display-3", { ...revealOptions, origin: "top", delay: 300 });
-  ScrollReveal().reveal("#home .fw-light", { ...revealOptions, origin: "bottom", delay: 500 });
-  ScrollReveal().reveal("#home .lead", { ...revealOptions, origin: "left", delay: 700 });
-  ScrollReveal().reveal("#home .btn", { ...revealOptions, origin: "right", delay: 900 });
+  ScrollReveal().reveal("#home .display-3", {
+    ...revealOptions,
+    origin: "top",
+    delay: 300,
+  });
+  ScrollReveal().reveal("#home .fw-light", {
+    ...revealOptions,
+    origin: "bottom",
+    delay: 500,
+  });
+  ScrollReveal().reveal("#home .lead", {
+    ...revealOptions,
+    origin: "left",
+    delay: 700,
+  });
+  ScrollReveal().reveal("#home .btn", {
+    ...revealOptions,
+    origin: "right",
+    delay: 900,
+  });
 
   // Animate About Section
-  ScrollReveal().reveal("#about h1", { ...revealOptions, origin: "top", delay: 300 });
-  ScrollReveal().reveal("#about p", { ...revealOptions, origin: "bottom", delay: 500, interval: 200 });
-  ScrollReveal().reveal("#about h2", { ...revealOptions, origin: "left", delay: 700 });
-  ScrollReveal().reveal("#about .video-container", { ...revealOptions, origin: "right", delay: 900 });
+  ScrollReveal().reveal("#about h1", {
+    ...revealOptions,
+    origin: "top",
+    delay: 300,
+  });
+  ScrollReveal().reveal("#about p", {
+    ...revealOptions,
+    origin: "bottom",
+    delay: 500,
+    interval: 200,
+  });
+  ScrollReveal().reveal("#about h2", {
+    ...revealOptions,
+    origin: "left",
+    delay: 700,
+  });
+  ScrollReveal().reveal("#about .video-container", {
+    ...revealOptions,
+    origin: "right",
+    delay: 900,
+  });
 
   // Animate navigation links one by one
-  if (window.innerWidth >= 1009) { 
-    document.querySelectorAll(".navbar-nav .nav-link").forEach((item, index) => {
-      ScrollReveal().reveal(item, { ...revealOptions, origin: "top", delay: 400 + index * 100 });
-    });
-  }  
+  if (window.innerWidth >= 1009) {
+    document
+      .querySelectorAll(".navbar-nav .nav-link")
+      .forEach((item, index) => {
+        ScrollReveal().reveal(item, {
+          ...revealOptions,
+          origin: "top",
+          delay: 400 + index * 100,
+        });
+      });
+  }
 
   // Animate Register button
-  ScrollReveal().reveal(".btn-primary", { ...revealOptions, origin: "bottom", delay: 1200 });
+  ScrollReveal().reveal(".btn-primary", {
+    ...revealOptions,
+    origin: "bottom",
+    delay: 1200,
+  });
 
   // Animate Special Attractions Section
-  ScrollReveal().reveal("#special h1", { ...revealOptions, origin: "top", delay: 300 });
+  ScrollReveal().reveal("#special h1", {
+    ...revealOptions,
+    origin: "top",
+    delay: 300,
+  });
 
   document.querySelectorAll(".special-card").forEach((card, index) => {
-    ScrollReveal().reveal(card, { ...revealOptions, origin: "bottom", delay: 400 + index * 200 });
+    ScrollReveal().reveal(card, {
+      ...revealOptions,
+      origin: "bottom",
+      delay: 400 + index * 200,
+    });
   });
 
   // Animate Event Timeline Section
-  ScrollReveal().reveal(".event-card", { ...revealOptions, origin: "top", delay: 300 });
-  ScrollReveal().reveal("#event h1", { ...revealOptions, origin: "top", delay: 300 });
-  ScrollReveal().reveal("#event p", { ...revealOptions, origin: "bottom", delay: 500 });
-  ScrollReveal().reveal(".filter-btn, .search-toggle", { ...revealOptions, origin: "left", delay: 700, interval: 100 });
+  ScrollReveal().reveal(".event-card", {
+    ...revealOptions,
+    origin: "top",
+    delay: 300,
+  });
+  ScrollReveal().reveal("#event h1", {
+    ...revealOptions,
+    origin: "top",
+    delay: 300,
+  });
+  ScrollReveal().reveal("#event p", {
+    ...revealOptions,
+    origin: "bottom",
+    delay: 500,
+  });
+  ScrollReveal().reveal(".filter-btn, .search-toggle", {
+    ...revealOptions,
+    origin: "left",
+    delay: 700,
+    interval: 100,
+  });
 
   // Animate Gallery Section
-  ScrollReveal().reveal("#gallery h2", { ...revealOptions, origin: "top", delay: 300 });
-  ScrollReveal().reveal(".swiper", { ...revealOptions, origin: "bottom", delay: 500 });
-  
-    // Animate Contact Section
-    ScrollReveal().reveal("#contact h1", { ...revealOptions, origin: "top", delay: 300 });
-    ScrollReveal().reveal("#contact p", { ...revealOptions, origin: "bottom", delay: 500 });
-  
-    // Animate FAQ Accordion
-    document.querySelectorAll(".accordion-item").forEach((item, index) => {
-      ScrollReveal().reveal(item, { ...revealOptions, origin: "left", delay: 400 + index * 100 });
+  ScrollReveal().reveal("#gallery h2", {
+    ...revealOptions,
+    origin: "top",
+    delay: 300,
+  });
+  ScrollReveal().reveal(".swiper", {
+    ...revealOptions,
+    origin: "bottom",
+    delay: 500,
+  });
+
+  // Animate Contact Section
+  ScrollReveal().reveal("#contact h1", {
+    ...revealOptions,
+    origin: "top",
+    delay: 300,
+  });
+  ScrollReveal().reveal("#contact p", {
+    ...revealOptions,
+    origin: "bottom",
+    delay: 500,
+  });
+
+  // Animate FAQ Accordion
+  document.querySelectorAll(".accordion-item").forEach((item, index) => {
+    ScrollReveal().reveal(item, {
+      ...revealOptions,
+      origin: "left",
+      delay: 400 + index * 100,
     });
-  
-    // Animate Contact Details (Address, Phone, Email)
-    document.querySelectorAll(".contact-card").forEach((card, index) => {
-      ScrollReveal().reveal(card, { ...revealOptions, origin: "bottom", delay: 600 + index * 200 });
+  });
+
+  // Animate Contact Details (Address, Phone, Email)
+  document.querySelectorAll(".contact-card").forEach((card, index) => {
+    ScrollReveal().reveal(card, {
+      ...revealOptions,
+      origin: "bottom",
+      delay: 600 + index * 200,
     });
-  
+  });
 };
 
 /*=============== HEADER ===============*/
@@ -184,13 +275,16 @@ $(document).ready(function () {
   // Load events in chunks
   function loadMoreEvents() {
     let loadMoreBtn = $("#loadMoreBtn");
-  
+
     if (currentIndex >= filteredData.length) {
       loadMoreBtn.text("Event End").prop("disabled", true);
       return;
     }
-  
-    let itemsToLoad = filteredData.slice(currentIndex, currentIndex + itemsPerPage);
+
+    let itemsToLoad = filteredData.slice(
+      currentIndex,
+      currentIndex + itemsPerPage
+    );
     itemsToLoad.forEach((event) => {
       let eventCard = `
         <div class="col-lg-4 col-md-6 col-12 event-card">
@@ -208,9 +302,9 @@ $(document).ready(function () {
         </div>`;
       eventList.append(eventCard);
     });
-  
+
     currentIndex += itemsPerPage;
-  
+
     if (currentIndex >= filteredData.length) {
       loadMoreBtn.text("Event End").prop("disabled", true);
     } else {
@@ -308,4 +402,24 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
   });
+});
+
+/*=============== POPUP ===============*/
+function showPopup() {
+  document.getElementById("popup").style.display = "flex";
+}
+function closePopup(event) {
+  // For scroll event, event.type will be "scroll"
+  if (event && event.type === "scroll") {
+    document.getElementById("popup").style.display = "none";
+    return;
+  }
+  // If clicked outside the popup content or on the close button
+  if (!event || event.target === document.getElementById("popup")) {
+    document.getElementById("popup").style.display = "none";
+  }
+}
+// Close the popup when scrolling
+window.addEventListener("scroll", function () {
+  closePopup({ type: "scroll" });
 });

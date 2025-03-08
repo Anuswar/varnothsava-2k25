@@ -570,37 +570,67 @@
         <h1 class="text-center fw-bold mb-4 text-gradient">Special Attractions</h1>
         <div class="row g-4">
             <!-- Food Fest -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-3 col-md-6">
                 <div class="card text-center special-card food-fest">
                     <i class="fas fa-utensils fa-3x mt-3"></i>
                     <div class="card-body">
-                        <h5 class="">Food Fest</h5>
+                        <h5>Food Fest</h5>
                         <p class="card-text">Explore delicious cuisines from around the world. A paradise for food lovers!</p>
                     </div>
                 </div>
             </div>
             <!-- Gaming Zone -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-3 col-md-6">
                 <div class="card text-center special-card gaming-zone">
                     <i class="fas fa-gamepad fa-3x mt-3"></i>
                     <div class="card-body">
-                        <h5 class="">Gaming Zone</h5>
+                        <h5>Gaming Zone</h5>
                         <p class="card-text">Immerse yourself in the latest video games, VR experiences, and tournaments.</p>
                     </div>
                 </div>
             </div>
             <!-- Business Hunt -->
-            <a href="special/31.html" class="col-lg-4 col-md-12 text-decoration-none">
+            <a href="special/31.html" class="col-lg-3 col-md-6 text-decoration-none">
                 <div class="card text-center special-card business-hunt">
                     <i class="fas fa-briefcase fa-3x mt-3"></i>
                     <div class="card-body">
-                        <h5 class="">Inno bazar</h5>
+                        <h5>Inno bazar</h5>
                         <p class="card-text">Showcase your entrepreneurial skills in this exciting business challenge!</p>
                     </div>
                 </div>
             </a>
+            <!-- Techno Cultural Fest -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card text-center special-card techno-fest" onclick="showPopup()">
+                    <i class="fas fa-music fa-3x mt-3"></i>
+                    <div class="card-body">
+                        <h5>Techno Cultural Fest</h5>
+                        <p class="card-text">Showcase your talents and win exciting prizes in Varnothsava!</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    
+    <!-- Popup Modal -->
+    <div id="popup" class="popup" onclick="closePopup(event)">
+        <div class="popup-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="closePopup()"><i class="fa-solid fa-xmark"></i></span>
+            <h2 class="popup-title"><i class="fa-solid fa-bullhorn"></i> EXCITING NEWS! <i class="fa-solid fa-fire"></i></h2>
+            
+            <p>Showcase your talents and win <strong>BIG</strong>!</p>
+            <p><strong>Varnothsava</strong>, our state-level Techno Cultural Fest, is offering:</p>
+            
+            <ul>
+                <li><strong><i class="fa-solid fa-trophy"></i> CASH PRIZE:</strong> <span class="prize">₹25,000/-</span> for the WINNER!</li>
+                <li><strong><i class="fa-solid fa-medal"></i> ₹10,000/- for the RUNNER-UP!</strong></li>
+            </ul>
+
+            <p>And that's not all! Many more exciting prizes and recognition await!</p>
+            <p>Participate, compete, and take home the glory <i class="fa-solid fa-bolt"></i> (and the cash!).</p>
+            <p>Stay tuned for updates and make your mark at <strong>Varnothsava</strong>! <i class="fa-solid fa-rocket"></i></p>
+        </div>
+    </div>
     
     <!--==================== EVENT ====================-->
     <section id="event" class="container py-5">
