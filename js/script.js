@@ -405,21 +405,34 @@ $(document).ready(function () {
 });
 
 /*=============== POPUP ===============*/
-function showPopup() {
-  document.getElementById("popup").style.display = "flex";
-}
-function closePopup(event) {
-  // For scroll event, event.type will be "scroll"
-  if (event && event.type === "scroll") {
-    document.getElementById("popup").style.display = "none";
-    return;
-  }
-  // If clicked outside the popup content or on the close button
-  if (!event || event.target === document.getElementById("popup")) {
-    document.getElementById("popup").style.display = "none";
-  }
-}
-// Close the popup when scrolling
-window.addEventListener("scroll", function () {
-  closePopup({ type: "scroll" });
+document.addEventListener("DOMContentLoaded", function () {
+  const popup = document.getElementById("popup");
+
+  // Ensure popup is hidden by default
+  popup.style.display = "none";
+
+  // Function to show the popup
+  window.showPopup = function () {
+    popup.style.display = "flex";
+  };
+
+  // Function to close the popup
+  window.closePopup = function (event) {
+    // Close on scroll
+    if (event?.type === "scroll") {
+      popup.style.display = "none";
+      return;
+    }
+    // Close when clicking outside the popup content
+    if (!event || event.target === popup) {
+      popup.style.display = "none";
+    }
+  };
+
+  // Close the popup when scrolling (if it's open)
+  window.addEventListener("scroll", function () {
+    if (popup.style.display === "flex") {
+      closePopup({ type: "scroll" });
+    }
+  });
 });
